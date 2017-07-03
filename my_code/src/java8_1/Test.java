@@ -26,7 +26,6 @@ public class Test {
 		list.add(apple6);
 		
 		String result = list.stream().map(Apple::getColor).reduce("", (a,b) -> a+b);
-		Collectors
 		System.out.println(result);
 		Supplier<Apple> s = Apple::new;	
 		List<Apple> filterApple = filterApple(list, new ApplePredicate() {
